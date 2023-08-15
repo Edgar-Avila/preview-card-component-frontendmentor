@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Lexend+Deca:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  padding: 2em;
+  font-size: 15px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card-item {
+  padding: 3em;
+  color: #ffffff;
+}
+
+.card-item img {
+  margin-bottom: 2rem;
+}
+
+.card-item h2 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-item p {
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.card-item button {
+  cursor: pointer;
+  border-radius: 99999px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 0.75em 2em;
+}
+
+.card-item button:hover {
+  background-color: #ffffff;
+}
+
+.item-1 button:hover {
+  color: hsl(31, 77%, 52%);
+}
+
+.item-2 button:hover {
+  color: hsl(184, 100%, 22%);
+}
+
+.item-3 button:hover {
+  color: hsl(179, 100%, 13%);
+}
+
+.item-1 {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.item-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.item-3 {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+  margin-top: 2em;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 740px) {
+  .card {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card-item p {
+    margin-bottom: 4rem;
+  }
+  .card-item h2 {
+    margin-bottom: 2rem;
+  }
+}
